@@ -1,27 +1,45 @@
 ﻿using System;
 
-namespace Zar__Oyunu
+namespace sayı_tahmin_etme
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1-6 arası bir sayı girin : ");
-            int girilenSayi = int.Parse(Console.ReadLine());
-            int sayi = 1;
-            Random rnd1 = new Random();
-            Random rnd2 = new Random();
-            while (true)
+            do
             {
-                int zar1 = rnd1.Next(1, 7);
-                int zar2 = rnd2.Next(1, 7);
-                if (zar1 == girilenSayi && zar2 == girilenSayi)
+                Random rnd = new Random();
+                int tutulanSayi = rnd.Next(0, 100);
+                for (int i = 0; i < 100; i++)
                 {
-                    Console.WriteLine("Atılan zar sayısı: {0}",sayi);
-                    break;
+                    Console.WriteLine("Tahmin ettiğiniz sayıyı girin: ");
+                    int girilenSayi = int.Parse(Console.ReadLine());
+                    if (girilenSayi > tutulanSayi)
+                    {
+                        Console.WriteLine("sayıyı düşürün!!");
+                    }
+                    else if (girilenSayi < tutulanSayi)
+                    {
+                        Console.WriteLine("sayıyı yükseltin!!");
+                    }
+                    else if (girilenSayi == tutulanSayi)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("tebrikler bildiniz..");
+                        Console.WriteLine("Devam etmek için E tuşuna basınız..");
+                        
+                        ConsoleKeyInfo info = Console.ReadKey();
+                        if (info.Key != ConsoleKey.E)
+                            break;
+                      else
+                        {
+                            tutulanSayi = rnd.Next(0, 100);
+                        }
+                    }
                 }
-                sayi++;
-            }
+               
+
+            } while (true);
         }
     }
 }
