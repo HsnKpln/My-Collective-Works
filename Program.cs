@@ -1,70 +1,27 @@
 ﻿using System;
 
-namespace Kelime_Tahmin_Oyunu
+namespace Zar__Oyunu
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string[] kelimeler = { "web", "mobil", "game", "software" };
-            string secilenKelime;
-            int hak = 5;
-            int kullaniciPuani = 0;
-            double puanKatsayisi = 1;
-            double dusulucek = (15 / 100);
-            int kazanilanPuan = 100;
-            Random rnd = new Random();
-            secilenKelime = kelimeler[rnd.Next(0, kelimeler.Length - 1)];
-            char[] yerTutucu = new char[secilenKelime.Length];
-            for (int i = 0; i < yerTutucu.Length; i++)
-            {
-                yerTutucu[i] = '*';
-                Console.Write('*');
-            }
-            Console.WriteLine();
+            Console.WriteLine("1-6 arası bir sayı girin : ");
+            int girilenSayi = int.Parse(Console.ReadLine());
+            int sayi = 1;
+            Random rnd1 = new Random();
+            Random rnd2 = new Random();
             while (true)
             {
-                Console.WriteLine("Kalan Kakkınız: {0}", hak);
-                Console.WriteLine("Bir harf giriniz: ");
-                char girilenHarf = Convert.ToChar(Console.ReadLine());
-
-                bool hedef = false;
-                int kalanHarf = 0;
-                for (int i = 0; i < secilenKelime.Length; i++)
+                int zar1 = rnd1.Next(1, 7);
+                int zar2 = rnd2.Next(1, 7);
+                if (zar1 == girilenSayi && zar2 == girilenSayi)
                 {
-                    if (secilenKelime[i] == girilenHarf)
-                    {
-                        yerTutucu[i] = girilenHarf;
-                        hedef = true;
-                        //kullaniciPuani = Convert.ToDouble(kazanilanPuan * puanKatsayisi);
-                    }
-                    if (yerTutucu[i] == '*')
-                    {
-                        kalanHarf++;
-                    }
-                    Console.Write(yerTutucu[i]);
-                }
-                Console.WriteLine();
-                if (kalanHarf ==0)
-                {
-                    Console.WriteLine("Tebrikler bildiniz..");
+                    Console.WriteLine("Atılan zar sayısı: {0}",sayi);
                     break;
                 }
-                if (hedef==false)
-                {
-                    hak--;
-                    
-                    //puanKatsayisi = Convert.ToDouble(puanKatsayisi - dusulucek);
-                }
-                if (hak==0)
-                {
-                    Console.WriteLine("Kaybettiniz..");
-                    break;
-                }
-                Console.WriteLine("-------------------------");
+                sayi++;
             }
-            Console.WriteLine("Seçilen Kelime: {0}", secilenKelime);
-            Console.WriteLine("Puanınız: {0}", kullaniciPuani);
         }
     }
 }
