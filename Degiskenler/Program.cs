@@ -29,7 +29,7 @@ namespace Degiskenler
             short degiskenShort = 153;
             degiskenShort = Int16.MaxValue;
             degiskenShort = short.MinValue;
-
+         
             int degiskenInt = int.MaxValue;
 
             long degiskenLong = long.MaxValue;

@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BOM Oyunu", "BOM Oyunu\BOM 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gün 3", "Gün 3", "{5B9E658D-8C21-4ADD-B834-0BC810B4DC79}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BOM Oyunu Hoca", "BOM Oyunu Hoca\BOM Oyunu Hoca.csproj", "{202A192F-2A7B-4A21-A0F1-EEB5C164A262}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BOM Oyunu H", "BOM Oyunu Hoca\BOM Oyunu H.csproj", "{202A192F-2A7B-4A21-A0F1-EEB5C164A262}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "matris ile üçgen çizimi", "matris ile üçgen çizimi\matris ile üçgen çizimi.csproj", "{D83E6C93-8D59-4687-B6B6-3A637E1A06EF}"
 EndProject
@@ -35,7 +35,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kelime Tahmin Oyunu", "Keli
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gün 4", "Gün 4", "{D7781A45-527D-479A-B33F-45A4E6009865}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sayıTahmin hoca", "sayıTahmin hoca\sayıTahmin hoca.csproj", "{A64894B6-ACCE-4954-8CD3-553D922ADD8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sayıTahmin H", "sayıTahmin hoca\sayıTahmin H.csproj", "{A64894B6-ACCE-4954-8CD3-553D922ADD8E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zar oyunu H", "Zar oyunu H\Zar oyunu H.csproj", "{AEC10CB5-C80F-4D4A-85A7-7E56ABED408C}"
 EndProject
@@ -51,9 +51,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Form ilk", "Form ilk\Form i
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gün 5", "Gün 5", "{39185AD7-7620-4A1C-96B6-B7C44B11CC44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdresDefteri", "AdresDefteri\AdresDefteri.csproj", "{6F7453F4-4EC3-40F9-8D99-C4FAB45615A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdresDefteri", "AdresDefteri\AdresDefteri.csproj", "{6F7453F4-4EC3-40F9-8D99-C4FAB45615A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdresDefteri.Models", "AdresDefteri.Models\AdresDefteri.Models.csproj", "{A3403F96-9935-40CB-9D34-2ABD58EDA5C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdresDefteri.Models", "AdresDefteri.Models\AdresDefteri.Models.csproj", "{A3403F96-9935-40CB-9D34-2ABD58EDA5C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
