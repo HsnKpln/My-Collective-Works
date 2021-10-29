@@ -27,11 +27,7 @@ namespace AdresDefteri
             //MessageBox.Show($"Kişinin yaşı: {kisi.Yas}"); //get
         }
         private List<Kisi> kisiler = new List<Kisi>();
-        private void btnKaydet_Click(object sender, EventArgs e)
-        {
-            
-        }
-
+        
         private void btnKaydet_Click_1(object sender, EventArgs e)
         {
             Kisi yeniKisi = new Kisi();

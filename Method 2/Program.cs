@@ -16,9 +16,9 @@ namespace MethodKullanimi
             alan = AlanHesapla(5d);
             int sonuc = Topla(Topla(3, 5), 5) + Topla(9, 7);
             int[] sayilar = { 3, 5, 6, 5, 8, 7, 4, 5, 5, 9, 8, 7, 7, 8, 32, 5, 5 };
-            sonuc = Topla(new[] { 3, 5, 6, 5, 8, 7, 4, 5, 5, 9, 8, 7, 7, 8, 32, 5, 5 }, 1);
+            //sonuc = Topla(new[] { 3, 5, 6, 5, 8, 7, 4, 5, 5, 9, 8, 7, 7, 8, 32, 5, 5 }, 1);
             sonuc = Topla(sayilar, 1);
-            sonuc = Topla(3, 5, 6, 5, 8, 7, 4, 5, 5, 9, 8, 7, 7, 8, 32, 5, 5);
+            //sonuc = Topla(3, 5, 6, 5, 8, 7, 4, 5, 5, 9, 8, 7, 7, 8, 32, 5, 5);
             Console.WriteLine(sonuc);
 
         }

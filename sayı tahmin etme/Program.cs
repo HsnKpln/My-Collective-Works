@@ -22,23 +22,17 @@ namespace sayı_tahmin_etme
                     {
                         Console.WriteLine("sayıyı yükseltin!!");
                     }
-                    else if (girilenSayi == tutulanSayi)
+                    else
                     {
-                        Console.Clear();
                         Console.WriteLine("tebrikler bildiniz..");
-                        Console.WriteLine("Devam etmek için E tuşuna basınız..");
-                        
-                        ConsoleKeyInfo info = Console.ReadKey();
-                        if (info.Key != ConsoleKey.E)
-                            break;
-                      else
-                        {
-                            tutulanSayi = rnd.Next(0, 100);
-                        }
+                        break;
                     }
                 }
-               
-
+                Console.WriteLine("Tekrar oynamak ister misiniz? E/H");
+                ConsoleKeyInfo info = Console.ReadKey();
+                if (info.Key != ConsoleKey.E)
+                    break;
+                Console.Clear();
             } while (true);
         }
     }

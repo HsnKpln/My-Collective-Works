@@ -9,10 +9,9 @@ namespace Kelime_Tahmin_Oyunu
             string[] kelimeler = { "web", "mobil", "game", "software" };
             string secilenKelime;
             int hak = 5;
-            int kullaniciPuani = 0;
+            double kullaniciPuani = 0;
             double puanKatsayisi = 1;
-            double dusulucek = (15 / 100);
-            int kazanilanPuan = 100;
+            double kazanilanPuan = 100;
             Random rnd = new Random();
             secilenKelime = kelimeler[rnd.Next(0, kelimeler.Length - 1)];
             char[] yerTutucu = new char[secilenKelime.Length];
@@ -36,7 +35,7 @@ namespace Kelime_Tahmin_Oyunu
                     {
                         yerTutucu[i] = girilenHarf;
                         hedef = true;
-                        //kullaniciPuani = Convert.ToDouble(kazanilanPuan * puanKatsayisi);
+                       kullaniciPuani = kazanilanPuan * puanKatsayisi;
                     }
                     if (yerTutucu[i] == '*')
                     {
@@ -54,7 +53,7 @@ namespace Kelime_Tahmin_Oyunu
                 {
                     hak--;
                     
-                    //puanKatsayisi = Convert.ToDouble(puanKatsayisi - dusulucek);
+                    puanKatsayisi = Convert.ToDouble(puanKatsayisi - 0.15);
                 }
                 if (hak==0)
                 {

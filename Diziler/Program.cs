@@ -22,25 +22,25 @@ namespace Diziler
             sayilar[2] = 6;
             sayilar[3] = 69;
 
-            Console.WriteLine(sayilar.Length);
+            Console.WriteLine($"sayilar dizisinin uzunluğu: {sayilar.Length}");
 
             Random rnd = new Random();
             for (int i = 0; i < sayilar.Length; i++)
             {
                 sayilar[i] = rnd.Next(100);
             }
-
+            Console.WriteLine("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
             for (int i = 0; i < sayilar.Length; i++)
             {
-                Console.WriteLine(i);
+                Console.Write($"{i})");
                 Console.WriteLine(sayilar[i]);
             }
-
+            Console.WriteLine("*********************************");
             foreach (int i in sayilar)
             {
                 Console.WriteLine(i);
             }
-
+            Console.WriteLine("---------------------------------");
             double[,] matris = new double[5, 3];
 
             for (int i = 0; i < matris.GetLength(0); i++)
