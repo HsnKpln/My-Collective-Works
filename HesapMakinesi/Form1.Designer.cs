@@ -54,7 +54,8 @@ namespace HesapMakinesi
             // lblSnc
             // 
             this.lblSnc.AutoSize = true;
-            this.lblSnc.Location = new System.Drawing.Point(418, 23);
+            this.lblSnc.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblSnc.Location = new System.Drawing.Point(24, 23);
             this.lblSnc.Name = "lblSnc";
             this.lblSnc.Size = new System.Drawing.Size(0, 31);
             this.lblSnc.TabIndex = 0;
@@ -80,6 +81,7 @@ namespace HesapMakinesi
             this.button1.TabIndex = 2;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.rakamOlay);
             // 
             // btn2
             // 
@@ -90,6 +92,7 @@ namespace HesapMakinesi
             this.btn2.TabIndex = 3;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.rakamOlay);
             // 
             // btnToplama
             // 
@@ -102,6 +105,7 @@ namespace HesapMakinesi
             this.btnToplama.TabIndex = 5;
             this.btnToplama.Text = "+";
             this.btnToplama.UseVisualStyleBackColor = false;
+            this.btnToplama.Click += new System.EventHandler(this.optHesap);
             // 
             // btn3
             // 
@@ -112,6 +116,7 @@ namespace HesapMakinesi
             this.btn3.TabIndex = 4;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.rakamOlay);
             // 
             // btnCikarma
             // 
@@ -124,6 +129,7 @@ namespace HesapMakinesi
             this.btnCikarma.TabIndex = 9;
             this.btnCikarma.Text = "-";
             this.btnCikarma.UseVisualStyleBackColor = false;
+            this.btnCikarma.Click += new System.EventHandler(this.optHesap);
             // 
             // btn6
             // 
@@ -134,6 +140,7 @@ namespace HesapMakinesi
             this.btn6.TabIndex = 8;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.rakamOlay);
             // 
             // btn5
             // 
@@ -144,6 +151,7 @@ namespace HesapMakinesi
             this.btn5.TabIndex = 7;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.rakamOlay);
             // 
             // btn4
             // 
@@ -154,6 +162,7 @@ namespace HesapMakinesi
             this.btn4.TabIndex = 6;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.rakamOlay);
             // 
             // btnCarpma
             // 
@@ -166,6 +175,7 @@ namespace HesapMakinesi
             this.btnCarpma.TabIndex = 13;
             this.btnCarpma.Text = "*";
             this.btnCarpma.UseVisualStyleBackColor = false;
+            this.btnCarpma.Click += new System.EventHandler(this.optHesap);
             // 
             // btn9
             // 
@@ -176,6 +186,7 @@ namespace HesapMakinesi
             this.btn9.TabIndex = 12;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.rakamOlay);
             // 
             // btn8
             // 
@@ -186,6 +197,7 @@ namespace HesapMakinesi
             this.btn8.TabIndex = 11;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.rakamOlay);
             // 
             // btn7
             // 
@@ -196,6 +208,7 @@ namespace HesapMakinesi
             this.btn7.TabIndex = 10;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.rakamOlay);
             // 
             // btnBölme
             // 
@@ -208,6 +221,7 @@ namespace HesapMakinesi
             this.btnBölme.TabIndex = 17;
             this.btnBölme.Text = "/";
             this.btnBölme.UseVisualStyleBackColor = false;
+            this.btnBölme.Click += new System.EventHandler(this.optHesap);
             // 
             // btnNokta
             // 
@@ -218,6 +232,7 @@ namespace HesapMakinesi
             this.btnNokta.TabIndex = 16;
             this.btnNokta.Text = ".";
             this.btnNokta.UseVisualStyleBackColor = true;
+            this.btnNokta.Click += new System.EventHandler(this.btnNokta_Click);
             // 
             // btn0
             // 
@@ -228,6 +243,7 @@ namespace HesapMakinesi
             this.btn0.TabIndex = 15;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = true;
+            this.btn0.Click += new System.EventHandler(this.rakamOlay);
             // 
             // btnEsittir
             // 
@@ -240,6 +256,7 @@ namespace HesapMakinesi
             this.btnEsittir.TabIndex = 20;
             this.btnEsittir.Text = "=";
             this.btnEsittir.UseVisualStyleBackColor = false;
+            this.btnEsittir.Click += new System.EventHandler(this.btnEsittir_Click);
             // 
             // btnCE
             // 
@@ -252,6 +269,7 @@ namespace HesapMakinesi
             this.btnCE.TabIndex = 19;
             this.btnCE.Text = "CE";
             this.btnCE.UseVisualStyleBackColor = false;
+            this.btnCE.Click += new System.EventHandler(this.btnCE_Click);
             // 
             // btnSilme
             // 
@@ -264,6 +282,7 @@ namespace HesapMakinesi
             this.btnSilme.TabIndex = 18;
             this.btnSilme.Text = "C";
             this.btnSilme.UseVisualStyleBackColor = false;
+            this.btnSilme.Click += new System.EventHandler(this.btnSilme_Click);
             // 
             // Form1
             // 
@@ -292,10 +311,11 @@ namespace HesapMakinesi
             this.Controls.Add(this.txtSonuc);
             this.Controls.Add(this.lblSnc);
             this.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form1";
             this.Text = "Hesap Makinesi";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Click += new System.EventHandler(this.optHesap);
             this.ResumeLayout(false);
             this.PerformLayout();
 
